@@ -1,0 +1,25 @@
+ctrl + shift + n - ახალი პროექტის გახსნა
+
+camel case (აქლემის წერის სტილი)
+kakhiKakhidzeAuditoriaTertmeti
+
+pascal case (პასკალის წერის სტილი)
+KakhiKakhidzeAuditoriaTertmeti
+
+kebab case 
+kakhi-kakhidze-auditoria-tertmeti
+
+snake case 
+kakhi_kakhidze_auditoria_tertmeti
+
+
+<.....> </.....>
+
+<.....> <.....> </.....> </.....>
+
+ინლაინ თეგები - თეგი რომელიც არ საჭიროებს ცალკეულ ხაზს
+<b> <strong> <i> <em>
+
+ბლოკური თეგები - თეგები რომელთაც აუცილებლად ჭირდება ცალკეული ხაზი
+<p> <h1>...<h6>
+
