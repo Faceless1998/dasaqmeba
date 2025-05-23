@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;
+  /* text-decoration: underline double; */
+  text-decoration: none;
+  box-sizing: border-box;
+}
+body {
+    width: 10000px;
+}
+
+.myclass {
+  width: 1000px;
+  height: 500px;
+  background-color: rgb(255, 255, 255);
+  /* background-position:center; */
+  /* background-repeat:space repeat-y; */
+  /* background-size: cover; */
+  /* background-attachment:fixed; */
+  /* background:linear-gradient(to top, #053432 20%, #c64e12 70%,  #00ff59 100%); */
+  color: rgb(0, 0, 0);
+  font-size: 40px; /*1 rem = 16px  0.5 rem = 8    0.25rem = 4*/
+  /* font-family:'Courier New', Courier, monospace; */
+  font-weight: normal;
+  font-style: italic;
+  text-align: justify;
+  /* text-decoration:; */
+  text-shadow: 5px 5px 10px rgb(255, 0, 0), -5px -5px 10px green;
+  text-transform:none;
+}
+
