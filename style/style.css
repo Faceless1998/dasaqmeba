@@ -1,55 +1,50 @@
+@import url("//cdn.web-fonts.ge/fonts/bpg-nino-mtavruli/css/bpg-nino-mtavruli.min.css");
+
 * {
   margin: 0;
   padding: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: "BPG Nino Mtavruli", sans-serif;
 }
 
-.container {
-  /* გარე ელემენტებთან ურთიერთობა */
-  /*
-    margin-top: 20px;
-    margin-right: 20px;
-    margin-bottom: 20px;
-    margin-left: 20px; 
-  */
-  /* margin: 20px; ერთი ელემენტი, ოთხივე მხარე თანაბრადაა გადანაწილებული*/
-  /* margin: 20px 30px; ორი ელემენტი, ოთხივე მხარე თანაბრადაა გადანაწილებული პარალელებად 20px- top bottomს ხოლო 30px left და right*
-  /* margin: 20px 30px 40px; 3 ელემენტზე პატერნი შესაბამისი იქნება, ხოლო მეოთხე მიიღებს მის პარალელურს, ანუ მეორეს */
-  /* margin: 20px 30px 20px 30px; ოთხი ელემენტი top right bottom left*/
-
-  /* შიდა ელემენტებთან ურთიერთობა */
-  /*
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-right: 20px;
-    padding-left: 20px;
-  */
-  /* padding: 20px; */
-  /* padding: 20px 30px; */
-  /* padding: 20px 30px 40px; */
-  /* padding: 20px 30px 40px 50px; */
-
-  /* position: relative; */
-  /* top: 0;
-  left: 100px;
-  right: 120px;
-  bottom: 20px; */
-  width: 200px;
-  height: 200px;
-  background-color: red;
+.nav {
+  background-color: purple;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  height: 100px;
+  align-items: center;
 }
 
-.inner {
-  width: 50px;
-  height: 50px;
-  background-color: green;
-  position: absolute;
-  top: 20px;
-  z-index: 3;
-
-  /* user-select: none; მომხმარებელს ეძლევა ან არ ეძლევა საშუალება მონიშნოს ელემენტი*/
+a {
+  color: white;
+  text-transform: uppercase;
+  font-size: 32px;
+  /* background-color: black; */
+  padding: 0 30px;
+  border-radius: 50px;
+  height: 100%;
+  display: flex;
+  align-items: center;
 }
 
-ul{
-  position: absolute;
-  z-index: 3;
+.nav-item {
+  height: 100px;
+  display: flex;
+  align-items: center;
+}
+
+a:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.logo {
+  height: 90px;
+  width: 90px;
+}
+
+.logo img {
+  height: 100%;
+  height: 100%;
 }
