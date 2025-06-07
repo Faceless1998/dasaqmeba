@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+/*
+  font-family: "Open Sans", sans-serif;
+  font-family: "Roboto", sans-serif;
+
+  bg color - #2a2933
+
+  pinky - #e44e98
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+.about {
+  width: 100%;
+  height: 650px;
+  margin: 50px 0;
+}
+
+.about .container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+
+  background-color: #2a2933;
+}
+
+.about .image {
+  width: 450px;
+  height: 570px;
+  background-image: url(./../assets/cardio.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  border: 10px solid #e44e98;
+}
+
+.about .desc {
+  width: 360px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.about .programs {
+  margin: 17px;
+  width: 100%;
+  height: 268px;
+  background-color: #e44e98;
+  padding: 30px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.about .programs .title {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: white;
+}
+
+.about .programs ul {
+  color: white;
+  font-family: "Roboto", sans-serif;
+  margin-left: 20px;
+}
+
+.about .programs ul li {
+  line-height: 2;
+}
+
+.about .info {
+  height: 570px;
+  width: 650px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  padding: 30px;
+}
+
+.about .info .welcome {
+  font-family: "Open Sans", sans-serif;
+  text-transform: uppercase;
+  font-size: 20px;
+  color: #e44e98;
+}
+
+.about .info .title {
+  font-family: "Open Sans", sans-serif;
+  text-transform: uppercase;
+  font-size: 30px;
+  font-weight: 900;
+}
+
+.about .info .infodesc {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+.about .button {
+  text-transform: uppercase;
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: white;
+  background-color: #e44e98;
+  padding: 10px 30px;
+  display: inline-block;
+  width: fit-content;
+  height: fit-content;
+}
