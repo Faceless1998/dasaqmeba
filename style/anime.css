@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Questrial&display=swap");
+
+:root {
+  --bgcolor: #3158f8;
+  --cardcolor: white;
+  --card-width: 270px;
+  --gap: 20px;
+  --main-font: "Lexend", sans-serif;
+  --second-font: "Questrial", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-size: 18px;
+}
+body {
+  background-color: var(--bgcolor);
+}
+section {
+  width: 100%;
+}
+
+section .container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: var(--gap);
+}
+
+section .title {
+  font-size: 48px;
+  font-family: var(--main-font);
+}
+
+section .cards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: var(--gap);
+  width: calc((var(--card-width) * 4) + (3 * var(--gap)));
+}
+
+section .card {
+  background-color: var(--cardcolor);
+  width: var(--card-width);
+  height: 320px;
+  padding: 30px 0;
+  border-radius: 30px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: var(--gap);
+
+  animation: cardup 2s ease;
+}
+
+.card .image {
+  width: 108px;
+  height: 108px;
+  border-radius: 50%;
+  background-color: black;
+  background-size: cover;
+  background-position: center;
+  animation: imager 1s ease-in-out;
+  animation-delay: 1s;
+}
+
+section .card:nth-child(1) .image {
+  background-image: url(./../assets/happy/1.jpg);
+}
+
+section .card:nth-child(2) .image {
+  background-image: url(./../assets/happy/2.jpg);
+}
+
+section .card:nth-child(3) .image {
+  background-image: url(./../assets/happy/3.jpg);
+}
+
+section .card:nth-child(4) .image {
+  background-image: url(./../assets/happy/4.jpg);
+}
+
+section .card:nth-child(5) .image {
+  background-image: url(./../assets/happy/5.jpg);
+}
+
+section .card:nth-child(6) .image {
+  background-image: url(./../assets/happy/6.jpg);
+}
+
+section .card:nth-child(7) .image {
+  background-image: url(./../assets/happy/7.jpg);
+}
+
+section .card:nth-child(8) .image {
+  background-image: url(./../assets/happy/8.jpg);
+}
+.card .name {
+  font-family: var(--main-font);
+  font-size: 24px;
+  text-transform: uppercase;
+}
+
+.card .job {
+  font-family: var(--second-font);
+  font-size: 18px;
+  font-style: italic;
+  letter-spacing: 3px;
+  text-align: center;
+}
+
+.card .icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: var(--gap);
+}
+
+@keyframes cardup {
+  0% {
+    margin-top: 1000px;
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  100% {
+    margin-top: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes imager {
+    0%{
+        transform: scale(0);
+    }
+
+    100%{
+        transform: scale(1);
+    }
+}
