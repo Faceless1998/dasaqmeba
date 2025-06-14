@@ -1,0 +1,179 @@
+:root {
+  --gap: 20px;
+  --coverline: #eaeef4;
+  --cardline: #a9aaac;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+  border: none;
+}
+
+.full {
+  width: 100%;
+  height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: var(--gap);
+  overflow: hidden;
+}
+
+.upcover {
+  position: relative;
+  height: 300px;
+  width: 90%;
+}
+
+.cover {
+  width: 100%;
+  height: 300px;
+  background-color: #6f8db6;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: var(--gap);
+  animation: rotating 2s ease-in-out;
+}
+
+.cards {
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.card {
+  width: 30%;
+  position: relative;
+  height: 320px;
+}
+
+.card > div {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap);
+}
+
+.card .image {
+  height: 200px;
+}
+
+.anim1 .image {
+  background-color: #4ec14c;
+}
+
+.anim2 .image {
+  background-color: #f0c51a;
+}
+
+.anim3 .image {
+  background-color: #fe5263;
+}
+
+.bigline {
+  width: 50%;
+  height: var(--gap);
+  background-color: var(--coverline);
+}
+
+.midline {
+  width: 40%;
+  height: var(--gap);
+  background-color: var(--coverline);
+}
+
+.lines {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap);
+}
+
+.biginlines {
+  width: 100%;
+  height: var(--gap);
+  background-color: var(--cardline);
+}
+
+.smallinlines {
+  width: 50%;
+  height: var(--gap);
+  background-color: var(--cardline);
+}
+
+.anim1,
+.anim2,
+.anim3 {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  transform: translate(0, 0);
+}
+
+.anim1 {
+  left: 0;
+  animation-name: card1;
+}
+
+.anim2 {
+  left: 0;
+  animation-name: card2;
+}
+
+.anim3 {
+  right: 0;
+  animation-name: card3;
+}
+
+@keyframes card1 {
+  0% {
+    transform: translate(-100%, 100%);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes card2 {
+  0% {
+    transform: translate(0, 100%);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes card3 {
+  0% {
+    transform: translate(100%, 100%);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes rotating {
+  0% {
+    position: absolute;
+    top: -500px;
+    transform: rotate(360deg);
+  }
+
+  50% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    top: 0px;
+    transform: rotate(0deg);
+  }
+}
