@@ -1,9 +1,12 @@
+/* fonts */
+
+/*root elements*/
 :root {
   --gap: 20px;
   --coverline: #eaeef4;
   --cardline: #a9aaac;
 }
-
+/*  ფიფქი - all */
 * {
   margin: 0;
   padding: 0;
@@ -11,7 +14,43 @@
   box-sizing: border-box;
   border: none;
 }
+/* უმთავრესი თეგი */
+body{
 
+}
+
+/* თეგების ცვლილებები */
+a{
+
+}
+
+ul{
+
+}
+/* table-ს და tr-ს და td-ს  */
+table, tr, td{
+  border-collapse: collapse;
+}
+
+/* შვილი ელემენტები */
+.new .cover {
+
+}
+/* > */
+.up{
+width: 100px;
+height: 100px;
+background-color: aqua;
+}
+
+/* + */
+.up:hover + .cover{
+  width: 20px;
+  height: 20px;
+  background-color: #f0c51a;
+}
+
+/* 
 .full {
   width: 100%;
   height: 100vh;
@@ -176,4 +215,4 @@
     top: 0px;
     transform: rotate(0deg);
   }
-}
+} */

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            text-decoration: none;
+            box-sizing: border-box;
+        }
+
+        .container {
+            width: 100%;
+            height: auto;
+            padding: 50px 0;
+            background-color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+
+        .inner {
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+        }
+
+
+        .item {
+            width: 270px;
+            height: 376px;
+            position: relative;
+
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+
+        .item:nth-child(1) {
+            background-image: url(./assets/adorable-woman-with-flowers-wavy.jpg);
+        }
+
+        .item:nth-child(2) {
+            background-image: url(./assets/hair-2.jpg);
+        }
+
+        .item:nth-child(3) {
+            background-image: url(./assets/hair-3.jpg);
+        }
+
+        .item:nth-child(4) {
+            background-image: url(./assets/hair-4.jpg);
+        }
+
+        .title {
+            text-transform: uppercase;
+            font-family: Arial, Helvetica, sans-serif;
+            position: absolute;
+            bottom: 20px;
+            left: 10px;
+            height: 77px;
+            font-size: 20px;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            width: calc(100% - 20px);
+            background-color: rgba(255, 255, 255, 0.8);
+
+        }
+
+        @media (min-width: 960px) and (max-width: 1200px) {
+            .inner{
+                flex-wrap: wrap;
+                width: calc(460px * 2 + 20px);
+            }
+
+            .item{
+                width: 460px;
+            }
+
+        }
+
+         @media (min-width: 500px) and (max-width: 960px) {
+            .inner{
+                flex-wrap: wrap;
+                width: calc(460px);
+            }
+
+            .item{
+                width: 460px;
+            }
+
+        }
+
+        @media (min-width: 0px) and (max-width: 500px) {
+            .inner{
+                flex-wrap: wrap;
+                width: calc(270px);
+            }
+
+            .item{
+                width: 270px;
+            }
+
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="inner">
+            <div class="item">
+                <div class="title">
+                    Loose Curls
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="title">
+                    Spiral
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="title">
+                    Tight
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="title">
+                    Coily
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+</body>
+
+</html>
