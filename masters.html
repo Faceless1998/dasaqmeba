@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            text-decoration: none;
+            box-sizing: border-box;
+        }
+
+        .container {
+            background-color: black;
+            width: 100%;
+            height: auto;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 40px 0;
+            flex-direction: column;
+            gap: 50px;
+
+        }
+
+        .inner {
+            width: calc(300px * 3 + 30px * 2);
+            height: 100%;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+
+        .item {
+            width: 300px;
+            height: 410px;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .item:nth-child(1) {
+            background-image: url(./assets/dark/1.jpg);
+        }
+
+        .item:nth-child(2) {
+            background-image: url(./assets/dark/2.jpg);
+        }
+
+        .item:nth-child(3) {
+            background-image: url(./assets/dark/3.jpg);
+        }
+
+        .item:nth-child(4) {
+            background-image: url(./assets/dark/4.jpg);
+        }
+
+        .item:nth-child(5) {
+            background-image: url(./assets/dark/5.jpg);
+        }
+
+        .item:nth-child(6) {
+            background-image: url(./assets/dark/weeer.jpg);
+        }
+
+        .title {
+            font-size: 100px;
+            color: white;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: 900;
+        }
+
+        @media (min-width: 700px) and (max-width: 1050px) {
+            .inner {
+                width: calc(300px * 2 + 30px * 1);
+
+            }
+        }
+
+        @media (min-width: 0px) and (max-width: 700px) {
+            .inner {
+                width: calc(300px);
+            }
+
+            .title {
+                font-size: 50px;
+            }
+        }
+    </style>
+
+
+
+
+
+
+</head>
+
+<body>
+
+
+
+    <div class="container">
+
+        <div class="title">
+            Our Masters
+
+        </div>
+        <div class="inner">
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+
+
+
+        </div>
+
+    </div>
+</body>
+
+</html>
